@@ -1,0 +1,62 @@
+.afiseazaMeniu {
+    display: flex;
+    justify-content: center;
+}
+
+.buton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matcardContend {
+    border-radius: 5%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.layoutMatcard {
+    margin: 25px;
+    border-radius: 3%;
+}
+
+.formContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSpace {
+    margin: 10px;
+    gap: 3px;
+}
+
+.margin {
+    margin: 10px;
+    padding: 10px;
+}
+
+.MatCardNormal {
+    padding: 10px;
+}
+
+.circle-image {
+    width: 180px;
+    /* sau orice dimensiune preferi */
+    height: 120px;
+    /* trebuie să fie pătrat pentru a obține un cerc perfect */
+    object-fit: cover;
+    justify-content: center;
+    /* Poziționează butoanele în dreapta */
+    align-items: center;
+}
+
+.maxSizeText {
+    width: 550px;
+    overflow: hidden;
+    /* Ascunde conținutul care depășește dimensiunea div-ului */
+    overflow-wrap: break-word;
+    /* Sparge cuvintele lungi */
+    word-wrap: break-word;
+    /* Sparge cuvintele lungi pentru compatibilitate veche */
+}

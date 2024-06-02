@@ -1,0 +1,15 @@
+<p>Bine ai venit pe pagina profilului tau !!!</p>
+
+<div class="MatCard buttonSpace">
+    <button mat-flat-button color="primary" (click)="filter(0)">Informatii generale</button>
+    <button mat-flat-button color="primary" (click)="filter(1)">Meniuri</button>
+    <button mat-flat-button color="primary" (click)="filter(2)">Antrenamente</button>
+</div>
+
+@if(filtru == 0){
+<app-profile-my-info></app-profile-my-info>
+} @else { @if(filtru == 1){
+<app-profile-mancare></app-profile-mancare>
+} @else {
+<app-profile-antrenament> </app-profile-antrenament>
+} }

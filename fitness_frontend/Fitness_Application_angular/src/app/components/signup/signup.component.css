@@ -1,0 +1,75 @@
+.signupBackground {
+    display: flex;
+    justify-content: center;
+    /* Poziționează butoanele în dreapta */
+    align-items: center;
+    /* Aliniază butoanele pe axa verticală */
+    margin-top: auto;
+    /* Asigură poziționarea butoanelor în partea de jos */
+}
+
+.MatCardContent {
+    border-radius: 10%;
+    padding: 20px;
+    width: auto;
+    padding: 30px;
+    margin: 30px;
+}
+
+.navigare {
+    text-decoration: none;
+    color: grey;
+    /* Schimbă culoarea după preferință */
+    transition: all 0.3s ease;
+    /* Adaugă o tranziție lină */
+}
+
+
+/* Efectul de hover */
+
+.navigare:hover {
+    text-decoration: underline;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.mijloc4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.butonContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.infoDiv {
+    background-color: lightgreen;
+    width: 850px;
+    margin: 30px;
+    padding: 30px;
+    overflow: hidden;
+    /* Ascunde conținutul care depășește dimensiunea div-ului */
+    overflow-wrap: break-word;
+    /* Sparge cuvintele lungi */
+    word-wrap: break-word;
+    /* Sparge cuvintele lungi pentru compatibilitate veche */
+    display: flex;
+    justify-content: center;
+    /* Poziționează butoanele în dreapta */
+    align-items: center;
+    /* Aliniază butoanele pe axa verticală */
+    margin-top: auto;
+    /* Asigură poziționarea butoanelor în partea de jos */
+}
+
+.formular {
+    padding: 30px;
+}

@@ -1,0 +1,127 @@
+.imagineAliment {
+    width: 40px;
+    /* Setează lățimea div-ului la 400px */
+    height: 80px;
+    /* Setează înălțimea div-ului la 200px */
+    margin: auto;
+    /* Centrează div-ul pe ecran */
+    background-color: #f0f0f0;
+}
+
+.example-header-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.imagine {
+    margin-top: 20px;
+}
+
+.marime_MatCard {
+    width: 1200px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.circle-image {
+    width: 360px;
+    /* sau orice dimensiune preferi */
+    height: 240px;
+    /* trebuie să fie pătrat pentru a obține un cerc perfect */
+    object-fit: cover;
+    justify-content: center;
+    /* Poziționează butoanele în dreapta */
+    align-items: center;
+}
+
+table {
+    border-spacing: 10px;
+    /* Ajustează valoarea pentru a obține spațiul dorit */
+}
+
+.mat-flat-button {
+    background-color: lightgreen;
+}
+
+.butonAlimente {
+    display: flex;
+    justify-content: flex-end;
+    /* Poziționează butoanele în dreapta */
+    align-items: center;
+    /* Aliniază butoanele pe axa verticală */
+    margin-top: auto;
+    /* Asigură poziționarea butoanelor în partea de jos */
+    gap: 8px;
+    /* Adaugă spațiu între butoane */
+    width: 1000px;
+    height: 100px;
+}
+
+.MatCard {
+    display: flex;
+    justify-content: center;
+    /* Poziționează butoanele în dreapta */
+    align-items: center;
+    /* Aliniază butoanele pe axa verticală */
+    margin-top: auto;
+    /* Asigură poziționarea butoanelor în partea de jos */
+}
+
+.buttonSpace {
+    gap: 8px;
+}
+
+.SpaceBottom {
+    margin-bottom: 25px;
+}
+
+.marime_MatCard_header {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite elementelor să se împacheteze pe linii noi */
+    justify-content: center;
+    /* Centrează elementele pe fiecare rând */
+}
+
+.matcardContent {
+    flex: 1 0 30%;
+    /* Face ca fiecare element să ocupe aproximativ 30% din lățimea rândului */
+    box-sizing: border-box;
+    margin: 30px;
+    /* Adaugă spațiu între elemente */
+    text-align: center;
+    /* Adaugă o margine pentru a vedea clar fiecare element */
+    padding: 10px;
+    /* Adaugă padding în jurul textului */
+}
+
+.marginMatcard {
+    margin: 30px;
+}
+
+.doubleButton {
+    display: flex;
+    justify-content: center;
+    /* Centrează butoanele pe linie */
+    gap: 10px;
+    /* Creează spațiu egal între butoane */
+    padding: 10px;
+    /* Opțional: adaugă padding pentru margini */
+}
+
+.doubleButton button {
+    margin: 0 5px;
+    /* Asigură margini egale între butoane */
+    flex: 1;
+    /* Face butoanele să ocupe spațiu în mod egal */
+    max-width: 200px;
+    /* Opțional: setează o lățime maximă pentru butoane */
+}

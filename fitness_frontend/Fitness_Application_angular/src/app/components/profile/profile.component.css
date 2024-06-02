@@ -1,0 +1,13 @@
+.MatCard {
+    display: flex;
+    justify-content: center;
+    /* Poziționează butoanele în dreapta */
+    align-items: center;
+    /* Aliniază butoanele pe axa verticală */
+    margin-top: auto;
+    /* Asigură poziționarea butoanelor în partea de jos */
+}
+
+.buttonSpace {
+    gap: 8px;
+}

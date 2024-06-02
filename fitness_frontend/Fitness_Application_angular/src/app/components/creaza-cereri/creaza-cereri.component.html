@@ -1,0 +1,35 @@
+<div class="creazaCereri">
+    <p>creaza-cereri works!</p>
+    <form [formGroup]="cerereForm">
+        <div class="container">
+
+            <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Categorie</mat-label>
+                    <mat-select formControlName="categorie" placeholder="Categorie">
+                        <mat-option value="Sugestii">Sugestii</mat-option>
+                        <mat-option value="Cerere rol de antrenor">Cerere rol de antrenor</mat-option>
+                        <mat-option value="Cerere rol de admin">Cerere rol de admin</mat-option>
+                        <mat-option value="Aliment nou">Aliment nou</mat-option>
+                        <mat-option value="Probleme intampinate">Probleme intampinate</mat-option>
+                        <mat-option value="Exercitiu nou">Exercitiu nou</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
+
+            <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Descriere</mat-label>
+                    <textarea formControlName="descriere" matInput rows="5"></textarea>
+                </mat-form-field>
+            </div>
+
+
+        </div>
+    </form>
+
+
+    <button (click)="onCreareCerere()">Trimite cererea</button>
+    <button (click)="onClose()">Inchide fereastra</button>
+</div>

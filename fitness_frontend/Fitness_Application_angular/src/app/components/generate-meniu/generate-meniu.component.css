@@ -1,0 +1,32 @@
+.meniu {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.buton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MatCardContent {
+    border-radius: 10%;
+    padding: 20px;
+    width: 800px;
+}
+
+.formContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSpace {
+    margin: 10px;
+    gap: 3px;
+}
+
+.MatCardNormal {
+    margin: 10px;
+}

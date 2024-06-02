@@ -1,0 +1,84 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    /* Așezăm elementele într-o singură linie */
+    justify-content: space-between;
+    /* Le separăm pentru a ocupa spațiul disponibil */
+    width: 80%;
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.layoutMatcard {
+    margin: 50px;
+    padding: 50px;
+}
+
+.user-info {
+    flex: 1;
+    /* Face ca div-ul să ocupe spațiul disponibil */
+    display: flex;
+    flex-direction: column;
+    /* Așezăm elementele unul sub altul */
+    align-items: left;
+}
+
+.user-image {
+    width: 350px;
+    height: 445px;
+    /* Setăm o lățime fixă pentru div-ul cu imaginea utilizatorului */
+    display: flex;
+    justify-content: flex-end;
+    /* Aliniem div-ul la dreapta */
+    align-items: flex-start;
+    /* Aliniem imaginea sus */
+    margin: 50px;
+    padding: 50px;
+}
+
+.circle-image {
+    width: 350px;
+    height: 445px;
+    /* trebuie să fie pătrat pentru a obține un cerc perfect */
+    object-fit: cover;
+    justify-content: center;
+    /* Poziționează butoanele în dreapta */
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    /* Distribuie div-urile cu card-uri la distanțe egale */
+    align-items: center;
+    /* Aliniază card-urile pe verticală */
+    padding: 20px;
+    /* Spațiu în interiorul containerului principal */
+}
+
+.card-container {
+    flex: 1;
+    /* Fiecare card-container va ocupa spațiu egal */
+    margin: 0 10px;
+    /* Adaugă spațiu între card-uri */
+}
+
+.example-card {
+    width: 100%;
+    height: 275px;
+    /* Asigură că mat-card ocupă întreaga lățime a card-container */
+    text-align: center;
+    /* Opțional: centru conținutul cardului */
+}

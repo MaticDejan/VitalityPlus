@@ -1,0 +1,21 @@
+<p>clienti works!</p>
+
+<div>
+    <h1>Aici sunt clientii mei</h1>
+</div>
+
+
+<div class="container">
+    @for(client of clienti;track client){
+    <div class="marginMatcard pozitieMatCard">
+        <mat-card class="matcardContent marimeMatcard">
+            <div class="matcardContent buttonSpace">
+                <mat-card-title>Client</mat-card-title>
+                <mat-card-subtitle>{{client.Nume}} {{client.Prenume}}</mat-card-subtitle>
+                <div><img class="circle-image" [src]="client.imagine"></div>
+                <div class="pozitieMatCard"><button mat-flat-button color="primary" (click)="onStergeClient(client)">Sterge Client</button></div>
+            </div>
+        </mat-card>
+    </div>
+    }
+</div>

@@ -1,0 +1,41 @@
+<p>cereri works!</p>
+
+@if(user[0].Admin == 0){ @for(cerere of cereri;track cerere){ @if(cerere.idUtilizatorCerere == user[0].Id){
+<div class="cerere">
+    <p>Categorie: {{cerere.categorie}}</p>
+    <p>Descriere: {{cerere.descriere}}</p>
+    @if(cerere.status != "In asteptare"){
+    <p>Raspuns cerere: {{cerere.raspuns}}</p>
+    }
+    <p>Status cerere: {{cerere.status}}</p>
+    @if(cerere.status != "In asteptare"){
+    <button (click)="OnStergeCererea(cerere.Id)">Sterge cererea</button> }
+</div>
+<br> } } } @if(user[0].Admin == 0){
+<button (click)="onCreazaCerere()">Creaza o cerere noua</button> } @if(user[0].Admin == 1){ @for(cerere of cereri;track cerere){ @if(cerere.status == "In asteptare"){
+<p>Categorie: {{cerere.categorie}}</p>
+<p>Descriere: {{cerere.descriere}}</p>
+<form [formGroup]="raspunsForm">
+    <div class="container">
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Raspuns</mat-label>
+                <textarea formControlName="raspuns" matInput rows="5"></textarea>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Verdict</mat-label>
+                <mat-select formControlName="verdict" placeholder="Verdict">
+                    <mat-option value="Aprobata">Aprobata</mat-option>
+                    <mat-option value="Respinsa">Respinsa</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+        </div>
+
+    </div>
+</form>
+
+<button (click)="OnRaspunsCerere(cerere.Id)">Raspunde cerere</button> } } }

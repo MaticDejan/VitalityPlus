@@ -1,0 +1,75 @@
+/* Containerul flex */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite elementelor să se împacheteze pe linii noi */
+    justify-content: center;
+    /* Centrează elementele pe fiecare rând */
+}
+
+
+/* Elementele flex */
+
+.marginMatcard {
+    flex: 1 1 calc(20% - 20px);
+    /* Face ca fiecare element să ocupe aproximativ 1/3 din lățimea containerului, minus spațiul de gap */
+    box-sizing: border-box;
+    margin: 10px;
+    /* Spațiu între elemente */
+}
+
+.matcardContent {
+    text-align: center;
+    padding: 10px;
+    /* Adaugă padding în jurul textului */
+    border-radius: 10px;
+}
+
+.circle-image {
+    width: 180px;
+    /* sau orice dimensiune preferi */
+    height: 120px;
+    /* trebuie să fie pătrat pentru a obține un cerc perfect */
+    object-fit: cover;
+    justify-content: center;
+    /* Poziționează butoanele în dreapta */
+    align-items: center;
+}
+
+
+/* Optional: stiluri suplimentare pentru a ajusta marginile și padding-ul */
+
+.mat-card {
+    margin: 0;
+    padding: 0;
+}
+
+.marimeMatcard {
+    height: auto;
+    width: auto;
+}
+
+.pozitieMatCard {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonSpace {
+    gap: 8px;
+    margin: 10px;
+}
+
+.maxSizeTitle {
+    width: 50px;
+}
+
+.maxSizeTitle {
+    width: 200px;
+    overflow: hidden;
+    /* Ascunde conținutul care depășește dimensiunea div-ului */
+    overflow-wrap: break-word;
+    /* Sparge cuvintele lungi */
+    word-wrap: break-word;
+    /* Sparge cuvintele lungi pentru compatibilitate veche */
+}

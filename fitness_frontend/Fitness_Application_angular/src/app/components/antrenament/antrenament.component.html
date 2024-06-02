@@ -1,0 +1,48 @@
+<p>antrenament works!</p>
+<div class="afiseazaMeniu">
+    <mat-card class="formContent layoutMatcard">
+        @for(ant of antrenament;track ant){ @if(ant.Id == antrenamentId){
+        <div>
+            <div class="formContent">
+                <mat-card-title>{{ant.Nume}}</mat-card-title>
+            </div>
+
+            <div class="formContent">
+                <mat-card-subtitle>Antrenament</mat-card-subtitle>
+            </div>
+
+            <div class=" maxSizeText">
+                <mat-card-content><b>Descriere: </b> {{ant.Descriere}}</mat-card-content>
+            </div>
+            <p><b>Continutul antrenamentului:</b></p>
+            @for(ef of efort;track ef){@if(ef.idAntrenament == ant.Id){ @for(ex of exercitiu;track ex){ @if(ex.Id == ef.idExercitiu){
+            <div class="formContent MatCardNormal">
+                <mat-card class="formContent matcardContend">
+                    <div class="formContent">
+                        <mat-card-title>{{ex.Nume}}</mat-card-title>
+                    </div>
+                    @if(ef.anduranta == 1){
+                    <mat-card-subtitle>Timp: {{ef.timp}}</mat-card-subtitle>
+                    } @else if(ef.greutati){
+                    <mat-card-subtitle>Serii: {{ef.serii}} Repetari: {{ef.repetari}}</mat-card-subtitle>
+                    }
+                    <div class=" maxSizeText">
+                        <mat-card-content>Descriere: {{ex.Descriere}}</mat-card-content>
+                    </div>
+                    <div class="formContent margin"><img class="circle-image" [src]="ex.imagine"></div>
+
+                    @if(ef.anduranta == 1){
+                    <p>In urma practicarii acestui exercitiu pentru {{ef.timp}} minute ati consumat {{ex.caloriiPer10Minute}} calorii</p>
+                    }@else if(ef.greutati){
+                    <p>In urma practicarii acestui exercitiu pentru {{ef.serii}} serii a cate {{ef.repetari}} repetari ati consumat {{ex.caloriiPerRepetare}} calorii </p>
+                    }
+                </mat-card>
+            </div>
+            } } } }
+            <div class="formContent">
+                <p>Calorii consumate efectuand acest antrenament: {{ant.calorii}}</p>
+            </div>
+        </div>
+        }}
+    </mat-card>
+</div>

@@ -1,0 +1,42 @@
+.updateUser {
+    width: 650px;
+    height: 550px;
+    padding: 20px;
+}
+
+.pozitie {
+    display: flex;
+    justify-content: center;
+    /* Poziționează butoanele în dreapta */
+    align-items: center;
+    /* Aliniază butoanele pe axa verticală */
+    margin-top: auto;
+    /* Asigură poziționarea butoanelor în partea de jos */
+}
+
+.buttonSpace {
+    gap: 8px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primele4 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+.mijloc4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ultimele4 {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}

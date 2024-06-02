@@ -1,0 +1,11 @@
+.updateExercitiu {
+    width: 650px;
+    height: 600px;
+    padding: 20px;
+}
+
+.mijloc4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
